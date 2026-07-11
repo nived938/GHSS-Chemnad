@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Govt. HSS Paravanadukkam</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="../images/logo.png" alt="School Logo">
+
+<h2>GHSS</h2>
+
+</div>
+
+<ul>
+
+<li class="active">
+<a href="#">
+<i class="fas fa-chart-line"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="fas fa-user-graduate"></i>
+Admissions
+</a>
+</li>
+
+<li>
+<a href="../index.html">
+<i class="fas fa-globe"></i>
+Visit Website
+</a>
+</li>
+
+<li>
+<a href="/logout">
+<i class="fas fa-right-from-bracket"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>Admin Dashboard</h1>
+
+<div class="admin-info">
+
+<i class="fas fa-user-shield"></i>
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+<!-- Statistics -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-user-graduate"></i>
+
+<h2 id="totalStudents">0</h2>
+
+<p>Total Admissions</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-school"></i>
+
+<h2>2026</h2>
+
+<p>Academic Year</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-calendar"></i>
+
+<h2 id="todayDate"></h2>
+
+<p>Today's Date</p>
+
+</div>
+
+</div>
+
+<!-- Search -->
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Student...">
+
+<button>
+
+<i class="fas fa-search"></i>
+
+</button>
+
+</div>
+
+<!-- Table -->
+
+<div class="table-box">
+
+<table id="studentTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Student Name</th>
+
+<th>Parent</th>
+
+<th>Class</th>
+
+<th>Phone</th>
+
+<th>Date</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<!-- Loaded by admin.js -->
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+<script>
+
+document.getElementById("todayDate").innerHTML =
+new Date().toLocaleDateString();
+
+</script>
+
+</body>
+
+</html>
